@@ -9,6 +9,7 @@ body {
     font-size: 10px;
     position: relative;
     min-height: 100vh;
+    min-width: 320px;
 }
 
 
@@ -73,6 +74,30 @@ i.show {
     display: block;
 }
 
+.brand-name,
+h2.info {
+    position: absolute;
+    width: 100%;
+    // text-align: center;
+    padding: 0 10px;
+    text-shadow: #333 0.1em 0.1em 0.1em;
+}
+
+.brand-name {
+
+    font-size: 1rem;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
+
+h2.info {
+    font-size: .8rem;
+    top: 70%;
+    left: 0%;
+    transform: translateY(-50%);
+}
+
 @media(min-width: 320px) and (max-width:990px) {
 
     header {
@@ -123,6 +148,50 @@ i.show {
         cursor: pointer;
         display: block;
     }
+
+    .brand-name {
+        text-align: center;
+        font-size: 2rem;
+        top: 50%;
+        padding: 0 55px;
+    }
+
+
+    h2.info {
+        text-align: center;
+        top: 85%;
+        font-size: 1.1rem;
+    }
+}
+
+@media(min-width: 375px) {
+    .brand-name {
+        // padding: 0 65px;
+        padding: 0 19vw;
+    }
+}
+
+@media(min-width: 414px) {
+    .brand-name {
+        font-size: 2.5rem;
+        top: 65%;
+    }
+
+    h2.info {
+        font-size: 1.5rem;
+    }
+}
+
+@media(min-width: 768px) {
+    .brand-name {
+        font-size: 3rem;
+        top: 60%;
+    }
+
+    h2.info {
+        font-size: 2rem;
+        top: 80%;
+    }
 }
 
 @media(min-width:991px) {
@@ -149,5 +218,17 @@ i.show {
 
     .menu-toggle {
         display: none;
+    }
+
+    .brand-name {
+        text-align: center;
+        font-size: 3rem;
+        top: 55%;
+    }
+
+    h2.info {
+        text-align: left;
+        padding: 0 0 0 20px;
+        top: 85%;
     }
 }
