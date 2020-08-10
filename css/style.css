@@ -79,6 +79,10 @@ i.show {
   display: block;
 }
 
+#footer {
+  display: none;
+}
+
 @media (min-width: 240px) and (max-width: 990px) {
   header {
     -webkit-box-shadow: 0 0 2px 5px #333;
@@ -107,9 +111,7 @@ i.show {
   }
   header nav ul li a {
     display: block;
-    font-size: 10px;
     text-align: center;
-    padding: 5px;
   }
   .menu-toggle {
     font-size: 24px;
@@ -143,10 +145,6 @@ i.show {
 }
 
 @media (min-width: 320px) and (max-width: 990px) {
-  header nav ul li a {
-    font-size: 22px;
-    padding: 10px;
-  }
   .brand-name {
     text-align: center;
     font-size: 2rem;
@@ -160,6 +158,21 @@ i.show {
   }
   .menu-toggle {
     font-size: 34px;
+  }
+}
+
+@media (min-height: 360px) and (orientation: portrait) {
+  #footer {
+    display: block;
+    position: fixed;
+    top: 95vh;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-size: .7rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
   }
 }
 
@@ -179,13 +192,6 @@ i.show {
   }
 }
 
-@media (min-width: 640px) and (orientation: landscape) {
-  header nav ul li a {
-    font-size: 20px;
-    padding: 5px;
-  }
-}
-
 @media (min-width: 768px) and (max-width: 990px) {
   .brand-name {
     font-size: 3rem;
@@ -194,6 +200,73 @@ i.show {
   h2.info {
     font-size: 2rem;
     top: 85vh;
+  }
+}
+
+@media (min-height: 240px) and (orientation: landscape) {
+  .brand-name {
+    display: none;
+  }
+  h2.info {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-height: 320px) {
+  header nav ul li a {
+    font-size: 1rem;
+    padding: 4px;
+  }
+  .brand-name {
+    display: block;
+    font-size: 2rem;
+  }
+  h2.info {
+    font-size: 1rem;
+  }
+}
+
+@media (min-height: 414px) and (orientation: landscape) {
+  header nav ul li a {
+    font-size: 1.3rem;
+    padding: 8px;
+  }
+  .brand-name {
+    font-size: 2.5rem;
+  }
+  h2.info {
+    font-size: 1.2rem;
+  }
+}
+
+@media (min-height: 568px) {
+  header nav ul li a {
+    font-size: 1.3rem;
+    padding: 10px;
+  }
+}
+
+@media (min-height: 740px) {
+  header nav ul li a {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+}
+
+@media (min-height: 1280px) {
+  header nav ul li a {
+    font-size: 2rem;
+    padding: 16px;
+  }
+  .brand-name {
+    display: block;
+    font-size: 4rem;
+  }
+  h2.info {
+    font-size: 2rem;
+  }
+  #footer {
+    font-size: 1.2rem;
   }
 }
 
@@ -234,6 +307,7 @@ i.show {
     text-align: center;
     font-size: 3rem;
     top: 55vh;
+    letter-spacing: 1px;
   }
   h2.info {
     font-size: 2rem;
