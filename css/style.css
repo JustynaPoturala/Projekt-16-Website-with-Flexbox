@@ -9,8 +9,11 @@ body {
   font-family: "Open Sans", sans-serif;
   font-size: 10px;
   position: relative;
-  min-height: 150vh;
   min-width: 240px;
+}
+
+div.home {
+  min-height: 100vh;
 }
 
 .bcg-image::before {
@@ -145,6 +148,10 @@ i.show {
 }
 
 @media (min-width: 320px) and (max-width: 990px) {
+  .brand-name,
+  h2.info {
+    text-shadow: #333 0.1em 0.1em 0.1em;
+  }
   .brand-name {
     text-align: center;
     font-size: 2rem;
@@ -314,6 +321,46 @@ i.show {
     text-align: left;
     padding: 0 0 0 20px;
     top: 80vh;
+  }
+}
+
+#aktualnosci {
+  padding: 10px 10px 30px;
+}
+
+.article1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.description {
+  width: 100%;
+  text-align: center;
+  padding: 10px 20px;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #333;
+}
+
+.article-image {
+  padding: 15px 5px;
+  max-height: 200px;
+}
+
+.article-text {
+  padding: 20px 5px;
+  font-size: 1rem;
+  color: #000;
+  color: #333;
+  text-align: justify;
+}
+
+@media (min-width: 740px) {
+  .article1 {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 /*# sourceMappingURL=style.css.map */
