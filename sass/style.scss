@@ -81,6 +81,10 @@ i.show {
     display: none;
 }
 
+.divider {
+    height: 1.5px;
+    background-color: #333;
+}
 
 @media(min-width: 240px) and (max-width:990px) {
 
@@ -353,6 +357,19 @@ i.show {
         padding: 0 0 0 20px;
         top: 80vh;
     }
+
+    #footer {
+        display: block;
+        position: fixed;
+        top: 95vh;
+        left: 0;
+        width: 100%;
+        padding: 5px;
+        text-align: center;
+        font-size: .8rem;
+        background-color: rgba(255, 255, 255, 0.5);
+        color: black;
+    }
 }
 
 #aktualnosci {
@@ -363,6 +380,7 @@ i.show {
 
     // background-color: #604B56;   //właściwy
     padding: 10px 10px 30px;
+    height: 200vh;
 }
 
 .article1 {
@@ -390,12 +408,4 @@ i.show {
     // text-shadow: #333 0.1em 0.1em 0.1em;
     color: #333;
     text-align: justify;
-}
-
-@media(min-width: 740px) {
-    .article1 {
-        display: flex;
-    }
-
-    // .article-image {}
 }

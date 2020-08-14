@@ -86,6 +86,11 @@ i.show {
   display: none;
 }
 
+.divider {
+  height: 1.5px;
+  background-color: #333;
+}
+
 @media (min-width: 240px) and (max-width: 990px) {
   header {
     -webkit-box-shadow: 0 0 2px 5px #333;
@@ -322,10 +327,23 @@ i.show {
     padding: 0 0 0 20px;
     top: 80vh;
   }
+  #footer {
+    display: block;
+    position: fixed;
+    top: 95vh;
+    left: 0;
+    width: 100%;
+    padding: 5px;
+    text-align: center;
+    font-size: .8rem;
+    background-color: rgba(255, 255, 255, 0.5);
+    color: black;
+  }
 }
 
 #aktualnosci {
   padding: 10px 10px 30px;
+  height: 200vh;
 }
 
 .article1 {
@@ -354,13 +372,5 @@ i.show {
   color: #000;
   color: #333;
   text-align: justify;
-}
-
-@media (min-width: 740px) {
-  .article1 {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
 }
 /*# sourceMappingURL=style.css.map */
