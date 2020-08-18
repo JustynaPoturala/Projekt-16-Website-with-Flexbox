@@ -30,7 +30,7 @@ div.home {
   background-position: center top;
 }
 
-header {
+.header-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -44,25 +44,22 @@ header {
   top: 30px;
   left: 0;
   width: 100%;
+  max-width: 1140px;
   height: 90px;
   background-color: rgba(255, 255, 255, 0.5);
   padding: 0 30px 0 20px;
 }
 
-header nav {
-  max-width: 1000px;
-}
-
-header nav ul {
+.header-container nav ul {
   list-style: none;
 }
 
-header nav ul li a {
+.header-container nav ul li a {
   text-decoration: none;
   color: #333;
 }
 
-header nav ul li a:hover {
+.header-container nav ul li a:hover {
   background-color: #333;
   color: #fff;
   -webkit-box-shadow: 0 0 6px #fff;
@@ -92,12 +89,12 @@ i.show {
 }
 
 @media (min-width: 240px) and (max-width: 990px) {
-  header {
+  .header-container {
     -webkit-box-shadow: 0 0 2px 5px #333;
             box-shadow: 0 0 2px 5px #333;
     z-index: 1;
   }
-  header nav {
+  .header-container nav {
     display: none;
     width: 100%;
     -webkit-transition: 1s;
@@ -107,17 +104,17 @@ i.show {
     left: 0;
     opacity: .5;
   }
-  header nav.on {
+  .header-container nav.on {
     position: absolute;
     display: block;
     background-color: rgba(255, 255, 255, 0.5);
     top: 94px;
     opacity: 1;
   }
-  header nav ul {
+  .header-container nav ul {
     display: block;
   }
-  header nav ul li a {
+  .header-container nav ul li a {
     display: block;
     text-align: center;
   }
@@ -245,7 +242,7 @@ i.show {
 }
 
 @media (min-height: 320px) {
-  header nav ul li a {
+  .header-container nav ul li a {
     font-size: 1rem;
     padding: 4px;
   }
@@ -259,7 +256,7 @@ i.show {
 }
 
 @media (min-height: 414px) and (orientation: landscape) {
-  header nav ul li a {
+  .header-container nav ul li a {
     font-size: 1.3rem;
     padding: 8px;
   }
@@ -272,21 +269,21 @@ i.show {
 }
 
 @media (min-height: 568px) {
-  header nav ul li a {
+  .header-container nav ul li a {
     font-size: 1.3rem;
     padding: 10px;
   }
 }
 
 @media (min-height: 740px) {
-  header nav ul li a {
+  .header-container nav ul li a {
     font-size: 1.5rem;
     padding: 10px;
   }
 }
 
 @media (min-height: 1280px) {
-  header nav ul li a {
+  .header-container nav ul li a {
     font-size: 2rem;
     padding: 16px;
   }
@@ -303,13 +300,13 @@ i.show {
 }
 
 @media (min-width: 991px) {
-  header {
+  .header-container {
     padding: 0 100px 0 30px;
   }
-  header nav {
+  .header-container nav {
     display: block;
   }
-  header nav ul {
+  .header-container nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -318,7 +315,7 @@ i.show {
         -ms-flex-direction: row;
             flex-direction: row;
   }
-  header nav ul li a {
+  .header-container nav ul li a {
     display: block;
     height: 60px;
     line-height: 60px;
@@ -377,8 +374,8 @@ i.show {
   }
 }
 
-#aktualnosci {
-  padding: 10px 10px 30px;
+#current-affairs {
+  padding: 30px 10px 30px;
   min-height: 50vh;
 }
 
@@ -417,6 +414,7 @@ i.show {
 
 .courses {
   background-color: #fff;
+  border: none;
 }
 
 .course-type {
@@ -501,5 +499,12 @@ i.show {
   margin-top: -30px;
   -webkit-transition-delay: .3s;
           transition-delay: .3s;
+}
+
+#programme {
+  background-color: #fff;
+  min-height: 150vh;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 /*# sourceMappingURL=style.css.map */
