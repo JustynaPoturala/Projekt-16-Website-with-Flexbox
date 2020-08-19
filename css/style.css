@@ -387,7 +387,7 @@ i.show {
 
 @media (min-width: 991px) {
   .header-container {
-    padding: 0 100px 0 30px;
+    padding: 0 30px 0 30px;
   }
   .header-container nav {
     display: block;
@@ -405,7 +405,7 @@ i.show {
     display: block;
     height: 60px;
     line-height: 60px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 0 20px;
   }
   .menu-toggle {
