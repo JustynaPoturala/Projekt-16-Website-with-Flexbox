@@ -181,7 +181,7 @@ i.show {
   }
 }
 
-@media (min-width: 240px) and (max-width: 376px) {
+@media (min-width: 240px) and (max-width: 451px) {
   .container-solo .card,
   .container-pairs .card {
     height: 150px;
@@ -223,6 +223,26 @@ i.show {
     padding: 10px 5px;
     font-size: .7rem;
     color: #333;
+  }
+  .timetable-class {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 15px 10px;
+  }
+  .time {
+    width: 40%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .description-courses {
+    width: 46%;
+    font-size: 1.1rem;
+    font-weight: normal;
+    padding: 0 10px;
   }
 }
 
@@ -325,6 +345,31 @@ i.show {
   .container-solo .card .content p,
   .container-pairs .card .content p {
     font-size: 12px;
+  }
+  .timetable-class {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 15px 10px;
+    border: 2px solid #333;
+    border-bottom: 0px solid #333;
+  }
+  .timetable-wrapper div:nth-last-child(1) {
+    border-bottom: 2px solid #333;
+  }
+  .time {
+    width: 40%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-style: italic;
+  }
+  .description-courses {
+    width: 46%;
+    font-size: 1.1rem;
+    font-weight: normal;
+    padding: 0 10px;
   }
 }
 
@@ -575,7 +620,8 @@ i.show {
   border: none;
 }
 
-.course-type {
+.course-type,
+.course-day {
   padding: 5px 20px;
   margin: 20px 0;
   font-size: 20px;
@@ -583,10 +629,17 @@ i.show {
   text-transform: uppercase;
 }
 
-#programme {
+#timetable {
   background-color: #fff;
   min-height: 150vh;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px 0 100px 0;
+}
+
+#solo {
+  background-color: #2f7174;
+}
+
+#duet {
+  background-color: #b88849;
 }
 /*# sourceMappingURL=style.css.map */

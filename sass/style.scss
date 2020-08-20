@@ -178,7 +178,7 @@ i.show {
     }
 }
 
-@media(min-width: 240px) and (max-width: 376px) {
+@media(min-width: 240px) and (max-width: 451px) {
 
     .container-solo .card,
     .container-pairs .card {
@@ -228,6 +228,28 @@ i.show {
         color: #333;
     }
 
+    ////////////////////////////   <section id="timetable"> //////////////////////////////
+
+    .timetable-class {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px 10px;
+    }
+
+
+    .time {
+        width: 40%;
+        font-size: 1.1rem;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .description-courses {
+        width: 46%;
+        font-size: 1.1rem;
+        font-weight: normal;
+        padding: 0 10px;
+    }
 
 }
 
@@ -346,6 +368,34 @@ i.show {
     .container-solo .card .content p,
     .container-pairs .card .content p {
         font-size: 12px;
+    }
+
+    ////////////////////////////   <section id="timetable"> //////////////////////////////
+
+    .timetable-class {
+        display: flex;
+        justify-content: space-around;
+        padding: 15px 10px;
+        border: 2px solid #333;
+        border-bottom: 0px solid #333;
+    }
+
+    .timetable-wrapper div:nth-last-child(1) {
+        border-bottom: 2px solid #333;
+    }
+
+    .time {
+        width: 40%;
+        font-size: 1.1rem;
+        font-weight: bold;
+        font-style: italic;
+    }
+
+    .description-courses {
+        width: 46%;
+        font-size: 1.1rem;
+        font-weight: normal;
+        padding: 0 10px;
     }
 }
 
@@ -612,7 +662,8 @@ i.show {
     border: none;
 }
 
-.course-type {
+.course-type,
+.course-day {
     padding: 5px 20px;
     margin: 20px 0;
     font-size: 20px;
@@ -620,12 +671,17 @@ i.show {
     text-transform: uppercase;
 }
 
-
-#programme {
+#timetable {
     background-color: #fff;
     min-height: 150vh;
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding: 50px 0 100px 0;
 }
 
-.programme-wrapper {}
+#solo {
+    background-color: rgb(47, 113, 116);
+}
+
+#duet {
+    // background-color: rgb(73, 184, 119);
+    background-color: rgb(184, 136, 73);
+}
