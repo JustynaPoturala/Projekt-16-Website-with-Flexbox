@@ -230,27 +230,6 @@ i.show {
 
     ////////////////////////////   <section id="timetable"> //////////////////////////////
 
-    .timetable-class {
-        display: flex;
-        justify-content: space-around;
-        padding: 15px 10px;
-    }
-
-
-    .time {
-        width: 40%;
-        font-size: 1.1rem;
-        font-weight: bold;
-        font-style: italic;
-    }
-
-    .description-courses {
-        width: 46%;
-        font-size: 1.1rem;
-        font-weight: normal;
-        padding: 0 10px;
-    }
-
 }
 
 @media(min-width: 320px) and (max-width:990px) {
@@ -382,20 +361,6 @@ i.show {
 
     .timetable-wrapper div:nth-last-child(1) {
         border-bottom: 2px solid #333;
-    }
-
-    .time {
-        width: 40%;
-        font-size: 1.1rem;
-        font-weight: bold;
-        font-style: italic;
-    }
-
-    .description-courses {
-        width: 46%;
-        font-size: 1.1rem;
-        font-weight: normal;
-        padding: 0 10px;
     }
 }
 
@@ -675,6 +640,34 @@ i.show {
     background-color: #fff;
     min-height: 150vh;
     padding: 50px 0 100px 0;
+}
+
+.timetable-class {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 10px;
+}
+
+
+.time {
+    width: 40%;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-style: normal;
+}
+
+.description-courses {
+    width: 46%;
+    font-size: 1.1rem;
+    font-weight: normal;
+    padding: 0 10px;
+}
+
+
+.description-courses span {
+    font-size: 1rem;
+    letter-spacing: -0.5px;
 }
 
 #solo {
