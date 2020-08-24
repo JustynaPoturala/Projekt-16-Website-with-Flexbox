@@ -210,6 +210,18 @@ i.show {
     width: 100%;
     border-radius: 4px;
   }
+  #offer .article-text {
+    width: 100%;
+    padding: 5px 10px;
+    text-align: center;
+  }
+  .offer-image {
+    width: 70%;
+    padding: 10px;
+  }
+  #offer .course-type {
+    background-color: #604B56;
+  }
 }
 
 @media (min-width: 240px) and (max-width: 415px) {
@@ -338,6 +350,38 @@ i.show {
   }
   .timetable-wrapper div:nth-last-child(1) {
     border-bottom: 2px solid #333;
+  }
+  .offer-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .offer-solo,
+  .offer-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 40%;
+  }
+  .img-container {
+    -webkit-box-ordinal-group: -1;
+        -ms-flex-order: -2;
+            order: -2;
+  }
+  .offer-image {
+    width: 100%;
+    padding: 20px 10px;
+  }
+  .course-type {
+    position: absolute;
+    font-size: 0.8rem;
   }
 }
 
@@ -583,11 +627,6 @@ i.show {
           transition-delay: .3s;
 }
 
-.courses {
-  background-color: #fff;
-  border: none;
-}
-
 .course-type,
 .course-day {
   padding: 5px 20px;
@@ -600,7 +639,7 @@ i.show {
 #timetable {
   background-color: #fff;
   min-height: 150vh;
-  padding: 50px 0 100px 0;
+  padding: 50px 0 25px 0;
 }
 
 .timetable-class {
@@ -640,5 +679,28 @@ i.show {
 
 #duet {
   background-color: #b88849;
+}
+
+#offer {
+  background-color: #fff;
+  min-height: 150vh;
+  padding: 25px 0;
+}
+
+.description-offer {
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  padding: 5px 8px;
+  font-weight: 600;
+}
+
+.offer-image {
+  display: block;
+  margin: 0 auto;
+}
+
+.image-text {
+  display: none;
 }
 /*# sourceMappingURL=style.css.map */

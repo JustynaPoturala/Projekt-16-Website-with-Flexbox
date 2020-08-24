@@ -212,6 +212,22 @@ i.show {
         border-radius: 4px;
     }
 
+    ////////////////////////////   <section id="offer"> //////////////////////////////
+    #offer .article-text {
+        width: 100%;
+        padding: 5px 10px;
+        text-align: center;
+    }
+
+    .offer-image {
+        width: 70%;
+        padding: 10px;
+    }
+
+    #offer .course-type {
+        background-color: #604B56;
+    }
+
 }
 
 @media(min-width: 240px) and (max-width: 415px) {
@@ -227,8 +243,6 @@ i.show {
         font-size: .7rem;
         color: #333;
     }
-
-    ////////////////////////////   <section id="timetable"> //////////////////////////////
 
 }
 
@@ -256,6 +270,7 @@ i.show {
     .menu-toggle {
         font-size: 34px;
     }
+
 }
 
 
@@ -361,6 +376,37 @@ i.show {
 
     .timetable-wrapper div:nth-last-child(1) {
         border-bottom: 2px solid #333;
+    }
+
+    ////////////////////////////   <section id="offer"> //////////////////////////////
+    .offer-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .offer-solo,
+    .offer-group {
+        display: flex;
+        flex-wrap: wrap;
+        width: 40%;
+        // padding-bottom: percentage(3/2);
+    }
+
+    .img-container {
+        order: -2; //aby img znajdowały się na górze kontenera
+        // padding-bottom: percentage(2/3);
+    }
+
+    .offer-image {
+        width: 100%;
+        padding: 20px 10px;
+    }
+
+    .course-type {
+        position: absolute;
+
+        font-size: 0.8rem;
     }
 }
 
@@ -622,10 +668,10 @@ i.show {
     transition-delay: .3s;
 }
 
-.courses {
-    background-color: #fff;
-    border: none;
-}
+// .courses {
+//     background-color: #fff;
+//     border: none;
+// }
 
 .course-type,
 .course-day {
@@ -639,7 +685,7 @@ i.show {
 #timetable {
     background-color: #fff;
     min-height: 150vh;
-    padding: 50px 0 100px 0;
+    padding: 50px 0 25px 0;
 }
 
 .timetable-class {
@@ -677,4 +723,29 @@ i.show {
 #duet {
     // background-color: rgb(73, 184, 119);
     background-color: rgb(184, 136, 73);
+}
+
+////////////////////////////   <section id="offer"> //////////////////////////////
+
+#offer {
+    background-color: #fff;
+    min-height: 150vh;
+    padding: 25px 0;
+}
+
+.description-offer {
+    display: block;
+    text-align: center;
+    font-size: 1rem;
+    padding: 5px 8px;
+    font-weight: 600;
+}
+
+.offer-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.image-text {
+    display: none;
 }
