@@ -182,7 +182,7 @@ i.show {
     }
 }
 
-@media(min-width: 240px) and (max-width: 451px) {
+@media(min-width: 240px) and (max-width: 499px) {
 
     .container-solo .card,
     .container-pairs .card {
@@ -386,7 +386,7 @@ i.show {
     .offer-wrapper {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: space-around;
     }
 
     .offer-solo,
@@ -394,14 +394,13 @@ i.show {
         display: flex;
         flex-wrap: wrap;
         width: 40%;
-        // padding-bottom: percentage(3/2);
     }
 
     .img-container {
         order: -2; //aby img znajdowały się na górze kontenera
         // padding-bottom: percentage(2/3);
         position: relative;
-        flex-grow: 0;
+        // flex-grow: 0;
     }
 
     .offer-image {
@@ -416,19 +415,18 @@ i.show {
     .image-text {
         display: block;
         position: absolute;
-        // width: 100%;
+        width: 100%;
         top: 50%;
-        left: 10px;
-        right: 10px;
         text-align: center;
         background-color: rgba(255, 255, 255, 0.3);
+        font-size: 1.1rem;
     }
 
     #offer .article-text {
         width: 100%;
         padding: 5px 10px;
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.2rem;
 
     }
 }
@@ -651,6 +649,7 @@ i.show {
     font-weight: bold;
     font-size: 2rem;
     color: #333;
+    background-color: #fff;
 }
 
 #dance-courses {
@@ -751,7 +750,9 @@ i.show {
 #offer {
     background-color: #fff;
     min-height: 150vh;
+    max-width: 1240px;
     padding: 25px 0;
+    margin: 0 auto;
 }
 
 .description-offer {
@@ -766,3 +767,5 @@ i.show {
     display: block;
     margin: 0 auto;
 }
+
+////////////////////////////   <section id="contact"> //////////////////////////////
