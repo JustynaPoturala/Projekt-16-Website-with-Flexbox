@@ -179,6 +179,9 @@ i.show {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
   }
+  .image-text {
+    display: none;
+  }
 }
 
 @media (min-width: 240px) and (max-width: 451px) {
@@ -374,14 +377,32 @@ i.show {
     -webkit-box-ordinal-group: -1;
         -ms-flex-order: -2;
             order: -2;
+    position: relative;
+    -webkit-box-flex: 0;
+        -ms-flex-positive: 0;
+            flex-grow: 0;
   }
   .offer-image {
     width: 100%;
     padding: 20px 10px;
   }
   .course-type {
+    display: none;
+  }
+  .image-text {
+    display: block;
     position: absolute;
-    font-size: 0.8rem;
+    top: 50%;
+    left: 10px;
+    right: 10px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+  #offer .article-text {
+    width: 100%;
+    padding: 5px 10px;
+    text-align: center;
+    font-size: 1rem;
   }
 }
 
@@ -548,11 +569,17 @@ i.show {
   .container-pairs .card .content p {
     font-size: 14px;
   }
+  .image-text {
+    font-size: 1.3rem;
+  }
+  .offer-image {
+    max-width: 100%;
+  }
 }
 
 #current-affairs {
   padding: 30px 10px 30px;
-  min-height: 50vh;
+  min-height: 20vh;
 }
 
 .article1 {
@@ -572,7 +599,7 @@ i.show {
 
 #dance-courses {
   background-color: #604B56;
-  min-height: 150vh;
+  min-height: 80vh;
 }
 
 .container-solo,
@@ -638,7 +665,7 @@ i.show {
 
 #timetable {
   background-color: #fff;
-  min-height: 150vh;
+  min-height: 80vh;
   padding: 50px 0 25px 0;
 }
 
@@ -698,9 +725,5 @@ i.show {
 .offer-image {
   display: block;
   margin: 0 auto;
-}
-
-.image-text {
-  display: none;
 }
 /*# sourceMappingURL=style.css.map */

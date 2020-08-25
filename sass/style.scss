@@ -27,7 +27,6 @@ div.home {
     opacity: 0.8;
     background-size: cover;
     background-position: center top;
-    // background-attachment: fixed;
 }
 
 .logo-container .logo.fixed {
@@ -35,8 +34,7 @@ div.home {
 }
 
 header {
-    // position: absolute;
-    position: fixed; //przypięcie do okna
+    position: fixed;
     top: 30px;
     left: 0;
     width: 100%;
@@ -175,6 +173,12 @@ i.show {
         top: 80vh;
         left: 0%;
         transform: translateY(-50%);
+    }
+
+    ////////////////////////////   <section id="offer"> //////////////////////////////
+
+    .image-text {
+        display: none;
     }
 }
 
@@ -396,6 +400,8 @@ i.show {
     .img-container {
         order: -2; //aby img znajdowały się na górze kontenera
         // padding-bottom: percentage(2/3);
+        position: relative;
+        flex-grow: 0;
     }
 
     .offer-image {
@@ -404,9 +410,26 @@ i.show {
     }
 
     .course-type {
-        position: absolute;
+        display: none;
+    }
 
-        font-size: 0.8rem;
+    .image-text {
+        display: block;
+        position: absolute;
+        // width: 100%;
+        top: 50%;
+        left: 10px;
+        right: 10px;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+
+    #offer .article-text {
+        width: 100%;
+        padding: 5px 10px;
+        text-align: center;
+        font-size: 1rem;
+
     }
 }
 
@@ -599,18 +622,22 @@ i.show {
     .container-pairs .card .content p {
         font-size: 14px;
     }
+
+    ////////////////////////////   <section id="offer"> //////////////////////////////
+
+    .image-text {
+        font-size: 1.3rem;
+    }
+
+    .offer-image {
+        max-width: 100%;
+
+    }
 }
 
 #current-affairs {
-    // min-height: 100vh;
-    // background-color: #D9BBA9;
-    // background-color: #c76029;
-    // background-color: #604b56c7;
-
-    // background-color: #604B56;   //właściwy
-
     padding: 30px 10px 30px;
-    min-height: 50vh;
+    min-height: 20vh;
 }
 
 .article1 {
@@ -628,7 +655,7 @@ i.show {
 
 #dance-courses {
     background-color: #604B56;
-    min-height: 150vh;
+    min-height: 80vh;
 }
 
 .container-solo,
@@ -668,11 +695,6 @@ i.show {
     transition-delay: .3s;
 }
 
-// .courses {
-//     background-color: #fff;
-//     border: none;
-// }
-
 .course-type,
 .course-day {
     padding: 5px 20px;
@@ -684,7 +706,7 @@ i.show {
 
 #timetable {
     background-color: #fff;
-    min-height: 150vh;
+    min-height: 80vh;
     padding: 50px 0 25px 0;
 }
 
@@ -721,7 +743,6 @@ i.show {
 }
 
 #duet {
-    // background-color: rgb(73, 184, 119);
     background-color: rgb(184, 136, 73);
 }
 
@@ -744,8 +765,4 @@ i.show {
 .offer-image {
     display: block;
     margin: 0 auto;
-}
-
-.image-text {
-    display: none;
 }
