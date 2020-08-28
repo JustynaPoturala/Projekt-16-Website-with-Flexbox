@@ -9,13 +9,14 @@ body {
     font-size: 10px;
     position: relative;
     min-width: 240px;
-    max-width: 1240px;
+    max-width: 1400px;
     margin: 0 auto;
 }
 
 div.home {
     min-height: 100vh;
 }
+
 
 .bcg-image::before {
     position: absolute;
@@ -226,10 +227,10 @@ i.show {
         text-align: center;
     }
 
-    .offer-image {
-        width: 70%;
-        padding: 10px;
-    }
+    // .offer-image {
+    //     width: 70%;
+    //     padding: 10px;
+    // }
 
     #offer .course-type {
         background-color: #604B56;
@@ -656,6 +657,7 @@ i.show {
 #dance-courses {
     background-color: #604B56;
     min-height: 60vh;
+    max-width: 1400px;
 }
 
 .container-solo,
@@ -767,6 +769,8 @@ i.show {
 .offer-image {
     display: block;
     margin: 0 auto;
+    width: 70%;
+    padding: 10px;
 }
 
 ////////////////////////////   <section id="contact"> //////////////////////////////
@@ -779,9 +783,9 @@ i.show {
 }
 
 #contact {
-    min-height: 80vh;
+    min-height: 250vh;
     margin: 0 auto;
-    padding: 0 0 0 0
+    padding: 0 10px;
 }
 
 .fa-phone-alt,
@@ -800,4 +804,47 @@ i.show {
 
 .position-center {
     padding: 0 10px;
+    line-height: 1.8;
+    font-size: 0.7rem;
+}
+
+#contact .form-title {
+    font-size: 1.3rem;
+    text-align: center;
+    padding: 15px 10px;
+}
+
+#contact form {
+    padding: 10px 20px;
+}
+
+#contact input,
+#contact button,
+#contact textarea {
+    margin-bottom: 15px;
+    font-family: "Open Sans", sans-serif;
+    width: 100%;
+    font-size: 14px;
+    padding: 5px;
+}
+
+#contact textarea {
+    height: 180px;
+}
+
+#contact input {
+    height: 26px;
+}
+
+#contact button {
+    font-size: 14px;
+    line-height: 40px;
+    cursor: pointer;
+}
+
+///////////////////////////////////////
+
+div.home,
+#current-affairs {
+    margin: 0 auto;
 }
