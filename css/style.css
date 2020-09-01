@@ -36,12 +36,16 @@ div.home {
   width: 80%;
 }
 
+.logo {
+  height: 80px;
+}
+
 header {
   position: fixed;
   top: 30px;
   left: 0;
   width: 100%;
-  height: 92px;
+  height: 90px;
   background-color: rgba(255, 255, 255, 0.5);
 }
 
@@ -51,6 +55,10 @@ header.fixed {
   height: 80px;
   background-color: rgba(255, 255, 255, 0.8);
   z-index: 2;
+}
+
+nav.header-container.fixed {
+  height: 80px;
 }
 
 .header-container {
@@ -66,6 +74,9 @@ header.fixed {
   max-width: 1140px;
   padding: 0 30px 0 20px;
   margin: 0 auto;
+  -webkit-box-shadow: 0 0 2px 5px #333;
+          box-shadow: 0 0 2px 5px #333;
+  height: 90px;
 }
 
 .header-container.fixed {
@@ -79,6 +90,8 @@ header.fixed {
   background-color: rgba(255, 255, 255, 0.5);
   top: 94px;
   opacity: 1;
+  left: 0;
+  line-height: 2;
 }
 
 .header-container nav.on.fixed {
@@ -91,6 +104,11 @@ header.fixed {
   opacity: .5;
 }
 
+.header-container nav {
+  display: none;
+  width: 100%;
+}
+
 .header-container nav ul {
   list-style: none;
 }
@@ -100,11 +118,28 @@ header.fixed {
   color: #333;
 }
 
+.header-container nav ul {
+  display: block;
+}
+
+.header-container nav ul li a {
+  display: block;
+  text-align: center;
+}
+
 .header-container nav ul li a:hover {
   background-color: #333;
   color: #fff;
   -webkit-box-shadow: 0 0 6px #fff;
           box-shadow: 0 0 6px #fff;
+}
+
+.menu-toggle {
+  font-size: 2.4em;
+  -webkit-transition: .3s linear;
+  transition: .3s linear;
+  cursor: pointer;
+  display: block;
 }
 
 .burger:hover {
@@ -120,8 +155,25 @@ i.show {
   display: block;
 }
 
-#footer {
-  display: none;
+.brand-name,
+h2.info {
+  position: absolute;
+  padding: 0 10px;
+  text-shadow: #333 0.1em 0.1em 0.1em;
+  z-index: -1;
+  text-align: center;
+}
+
+.brand-name {
+  font-size: 1.8em;
+  top: 50vh;
+  width: 100%;
+  z-index: -1;
+}
+
+h2.info {
+  top: 75vh;
+  font-size: 1.3em;
 }
 
 .divider {
@@ -130,57 +182,18 @@ i.show {
   background-color: #333;
 }
 
+#footer {
+  display: none;
+}
+
 @media (min-width: 240px) and (max-width: 990px) {
-  .header-container {
-    -webkit-box-shadow: 0 0 2px 5px #333;
-            box-shadow: 0 0 2px 5px #333;
-  }
   .header-container nav {
-    display: none;
-    width: 100%;
     -webkit-transition: 1s;
     transition: 1s;
     background-color: transparent;
     top: 70px;
     left: 0;
     opacity: .5;
-  }
-  .header-container nav ul {
-    display: block;
-  }
-  .header-container nav ul li a {
-    display: block;
-    text-align: center;
-  }
-  .menu-toggle {
-    font-size: 24px;
-    -webkit-transition: .3s linear;
-    transition: .3s linear;
-    cursor: pointer;
-    display: block;
-  }
-  .brand-name,
-  h2.info {
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    padding: 0 10px;
-    text-shadow: #333 0.1em 0.1em 0.1em;
-    z-index: -1;
-  }
-  .brand-name {
-    font-size: 1rem;
-    top: 60vh;
-    left: 0;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
-  }
-  h2.info {
-    font-size: .6rem;
-    top: 80vh;
-    left: 0%;
-    -webkit-transform: translateY(-50%);
-            transform: translateY(-50%);
   }
   .image-text {
     display: none;
@@ -241,23 +254,18 @@ i.show {
 }
 
 @media (min-width: 320px) and (max-width: 990px) {
-  .brand-name,
-  h2.info {
-    text-shadow: #333 0.1em 0.1em 0.1em;
-  }
   .brand-name {
-    text-align: center;
-    font-size: 2rem;
+    font-size: 2.5em;
     top: 50vh;
     padding: 0 55px;
   }
   h2.info {
-    text-align: center;
-    top: 85vh;
-    font-size: 1.1rem;
+    top: 75vh;
+    font-size: 1.5em;
+    width: 100%;
   }
   .menu-toggle {
-    font-size: 34px;
+    font-size: 3.4em;
   }
 }
 
@@ -276,26 +284,20 @@ i.show {
   }
 }
 
-@media (min-width: 375px) and (max-width: 990px) {
-  .brand-name {
-    padding: 0 19vw;
-  }
-}
-
 @media (min-width: 414px) and (max-width: 990px) {
-  .brand-name {
-    font-size: 2.5rem;
-    top: 65vh;
-  }
-  h2.info {
-    font-size: 1.2rem;
-  }
   .article-text {
     font-size: 1rem;
   }
 }
 
 @media (min-width: 500px) {
+  .brand-name {
+    font-size: 3.3em;
+    padding: 0;
+  }
+  h2.info {
+    font-size: 1.7em;
+  }
   .article-image {
     width: 30%;
     height: 30%;
@@ -403,7 +405,7 @@ i.show {
 
 @media (min-width: 768px) and (max-width: 990px) {
   .brand-name {
-    font-size: 3rem;
+    font-size: 4.5em;
     top: 60vh;
   }
   h2.info {
@@ -419,35 +421,17 @@ i.show {
   }
 }
 
-@media (min-height: 240px) and (orientation: landscape) {
-  .brand-name {
-    display: none;
-  }
-  h2.info {
-    font-size: 0.8rem;
-  }
-}
-
 @media (min-height: 320px) {
   .header-container nav ul li a {
     font-size: 1rem;
     padding: 4px;
   }
-  .brand-name {
-    display: block;
-  }
-  h2.info {
-    font-size: 1rem;
-  }
 }
 
 @media (min-height: 414px) and (orientation: landscape) {
   .header-container nav ul li a {
-    font-size: 1.3rem;
-    padding: 8px;
-  }
-  .brand-name {
-    font-size: 2.5rem;
+    font-size: 1.7em;
+    padding: 6px;
   }
   h2.info {
     font-size: 1.2rem;
@@ -487,25 +471,30 @@ i.show {
 
 @media (min-width: 991px) {
   .header-container {
-    padding: 0 30px 0 30px;
+    padding: 0 30px 0 10px;
+    -webkit-box-shadow: 0 0 0 0 #333;
+            box-shadow: 0 0 0 0 #333;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
   }
   .header-container nav {
     display: block;
+    padding-left: 150px;
   }
   .header-container nav ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
   }
   .header-container nav ul li a {
     display: block;
     height: 60px;
     line-height: 60px;
-    font-size: 1.1rem;
+    font-size: 1.5em;
     padding: 0 20px;
   }
   .menu-toggle {
@@ -516,11 +505,10 @@ i.show {
     position: absolute;
     width: 100%;
     padding: 0 10px;
-    text-shadow: #333 0.1em 0.1em 0.1em;
   }
   .brand-name {
     text-align: center;
-    font-size: 3rem;
+    font-size: 5em;
     top: 55vh;
     letter-spacing: 1px;
   }
@@ -780,6 +768,8 @@ i.show {
   width: 100%;
   font-size: 14px;
   padding: 5px;
+  border-top: 0.2px solid #604B56;
+  border: 1px solid #ced4da;
 }
 
 #contact textarea {
@@ -794,10 +784,20 @@ i.show {
   font-size: 14px;
   line-height: 40px;
   cursor: pointer;
+  background-color: #fff;
 }
 
 div.home,
 #current-affairs {
   margin: 0 auto;
+}
+
+@media (min-width: 1100px) {
+  .header-container nav ul li a {
+    font-size: 1.8em;
+  }
+  .brand-name {
+    font-size: 6em;
+  }
 }
 /*# sourceMappingURL=style.css.map */
