@@ -6,17 +6,16 @@
 
 body {
     font-family: "Open Sans", sans-serif;
-    font-size: 10px;
+    font-size: 0.6rem;
     position: relative;
-    min-width: 240px;
-    max-width: 1400px;
+    min-width: 15rem;
+    max-width: 87.5rem;
     margin: 0 auto;
 }
 
 div.home {
     min-height: 100vh;
 }
-
 
 .bcg-image::before {
     position: absolute;
@@ -37,39 +36,39 @@ div.home {
 }
 
 .logo {
-    height: 80px;
+    height: 5rem;
 }
 
 header {
     position: fixed;
-    top: 30px;
+    top: 1.8rem;
     left: 0;
     width: 100%;
-    height: 90px;
+    height: 5.6rem;
     background-color: rgba(255, 255, 255, 0.5);
 }
 
 header.fixed {
     top: 0;
     width: 100%;
-    height: 80px;
+    height: 5rem;
     background-color: rgba(255, 255, 255, 0.8);
     z-index: 2;
 }
 
 nav.header-container.fixed {
-    height: 80px;
+    height: 5rem;
 }
 
 .header-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    max-width: 1140px;
-    padding: 0 30px 0 20px;
+    max-width: 71rem;
+    padding: 0 1.8rem 0 1.2rem;
     margin: 0 auto;
-    box-shadow: 0 0 2px 5px #333;
-    height: 90px;
+    box-shadow: 0 0 0.125rem 0.3rem #333;
+    height: 5.6rem;
 
 }
 
@@ -81,7 +80,7 @@ nav.header-container.fixed {
     position: absolute;
     display: block;
     background-color: rgba(255, 255, 255, 0.5);
-    top: 94px;
+    top: 5.8rem;
     opacity: 1;
     left: 0;
     line-height: 2;
@@ -89,7 +88,7 @@ nav.header-container.fixed {
 
 .header-container nav.on.fixed {
     background-color: rgba(255, 255, 255, 0.8);
-    top: 80px;
+    top: 5rem;
     z-index: 1;
 }
 
@@ -123,12 +122,12 @@ nav.header-container.fixed {
 .header-container nav ul li a:hover {
     background-color: #333;
     color: #fff;
-    box-shadow: 0 0 6px #fff;
+    box-shadow: 0 0 0.375rem #fff;
 }
 
 
 .menu-toggle {
-    font-size: 2.4em;
+    font-size: 1.5rem;
     transition: .3s linear;
     cursor: pointer;
     display: block;
@@ -150,14 +149,14 @@ i.show {
 .brand-name,
 h2.info {
     position: absolute;
-    padding: 0 10px;
-    text-shadow: #333 0.1em 0.1em 0.1em;
+    padding: 0 0.6rem;
+    text-shadow: #333 0.2rem 0.2rem 0.2rem;
     z-index: -1;
     text-align: center;
 }
 
 .brand-name {
-    font-size: 1.8em;
+    font-size: 1.1rem;
     top: 50vh;
     width: 100%;
     z-index: -1;
@@ -165,12 +164,12 @@ h2.info {
 
 h2.info {
     top: 75vh;
-    font-size: 1.3em;
+    font-size: 0.8rem;
 }
 
 .divider {
-    margin: 10px 0;
-    height: 1.5px;
+    margin: 0.6rem 0;
+    height: 0.09rem;
     background-color: #333;
 }
 
@@ -181,10 +180,9 @@ h2.info {
 @media(min-width: 240px) and (max-width:990px) {
 
     .header-container nav {
-        // width: 100%;
         transition: 1s;
         background-color: transparent;
-        top: 70px;
+        top: 4.4rem;
         left: 0;
         opacity: .5;
     }
@@ -200,40 +198,40 @@ h2.info {
 
     .container-solo .card,
     .container-pairs .card {
-        height: 150px;
-        max-width: 180px;
-        margin: 20px 0;
+        height: 9.375rem;
+        max-width: 11.25rem;
+        margin: 1.25rem 0;
     }
 
     .container-solo .card:hover,
     .container-pairs .card:hover {
-        height: 295px;
+        height: 18.438rem;
     }
 
     .container-solo .card:hover .content,
     .container-pairs .card:hover .content {
-        margin-top: -20px;
+        margin-top: -1.25rem;
     }
 
     .card .imgBox {
-        width: 150px;
-        height: 150x;
+        width: 9.375rem;
+        height: 9.375rem;
         position: relative;
-        top: -22px;
-        left: 15px;
+        top: -1.375rem;
+        left: 0.937rem;
         z-index: 1;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.3rem 1.25rem rgba(0, 0, 0, 0.2);
     }
 
     .card .imgBox img {
         width: 100%;
-        border-radius: 4px;
+        border-radius: 0.25rem;
     }
 
     ////////////////////////////   <section id="offer"> //////////////////////////////
     #offer .article-text {
         width: 100%;
-        padding: 5px 10px;
+        padding: 0.3rem 0.6rem;
         text-align: center;
     }
 
@@ -245,20 +243,19 @@ h2.info {
     #offer .course-type {
         background-color: #604B56;
     }
-
 }
 
 @media(min-width: 240px) and (max-width: 415px) {
     .article-image {
         width: 40%;
         height: 40%;
-        padding: 10px 5px;
+        padding: 0.6rem 0.3rem;
     }
 
     .article-text {
         width: 60%;
-        padding: 10px 5px;
-        font-size: .7rem;
+        padding: 0.6rem 0.3rem;
+        font-size: 0.7rem;
         color: #333;
     }
 
@@ -267,20 +264,20 @@ h2.info {
 @media(min-width: 320px) and (max-width:990px) {
 
     .brand-name {
-        font-size: 2.5em;
+        font-size: 1.5rem;
         top: 50vh;
-        padding: 0 55px;
+        padding: 0 3.4rem;
     }
 
 
     h2.info {
         top: 75vh;
-        font-size: 1.5em;
+        font-size: 0.9rem;
         width: 100%;
     }
 
     .menu-toggle {
-        font-size: 3.4em;
+        font-size: 2rem;
     }
 }
 
@@ -292,9 +289,9 @@ h2.info {
         top: 95vh;
         left: 0;
         width: 100%;
-        padding: 5px;
+        padding: 0.3rem;
         text-align: center;
-        font-size: .7rem;
+        font-size: 0.7rem;
         background-color: rgba(255, 255, 255, 0.5);
         color: black;
     }
@@ -310,64 +307,64 @@ h2.info {
 
 @media(min-width: 500px) {
     .brand-name {
-        font-size: 3.3em;
+        font-size: 2rem;
         padding: 0;
     }
 
     h2.info {
-        font-size: 1.7em;
+        font-size: 1.2rem;
     }
 
     .article-image {
         width: 30%;
         height: 30%;
-        padding: 10px 10px;
+        padding: 0.6rem;
     }
 
     .article-text {
         width: 70%;
-        padding: 10px 10px;
+        padding: 0.6rem;
         font-size: 1.2rem;
         color: #333;
     }
 
     .card {
-        max-width: 280px;
-        height: 220px;
+        max-width: 17.5rem;
+        height: 13.75rem;
     }
 
     .card:hover {
-        height: 330px;
+        height: 20.6rem;
     }
 
     .card .imgBox {
         position: relative;
-        width: 220px;
-        height: 220px;
-        top: -35px;
-        left: 30px;
+        width: 13.75rem;
+        height: 13.75rem;
+        top: -2.188rem;
+        left: 1.875rem;
         z-index: 1;
-        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0.3rem 1.25rem rgba(0, 0, 0, 0.2);
     }
 
     .card .imgBox img {
         max-width: 100%;
-        border-radius: 4px;
+        border-radius: 0.25rem;
     }
 
     .container-solo .card .content,
     .container-pairs .card .content {
-        margin-top: -140px;
+        margin-top: -8.75rem;
     }
 
     .container-solo .card:hover .content,
     .container-pairs .card:hover .content {
-        margin-top: -30px;
+        margin-top: -1.875rem;
     }
 
     .container-solo .card .content p,
     .container-pairs .card .content p {
-        font-size: 12px;
+        font-size: 0.75rem;
     }
 
     ////////////////////////////   <section id="timetable"> //////////////////////////////
@@ -375,13 +372,13 @@ h2.info {
     .timetable-class {
         display: flex;
         justify-content: space-around;
-        padding: 15px 10px;
-        border: 2px solid #333;
-        border-bottom: 0px solid #333;
+        padding: 0.937rem 0.6rem;
+        border: 0.125rem solid #333;
+        border-bottom: 0rem solid #333;
     }
 
     .timetable-wrapper div:nth-last-child(1) {
-        border-bottom: 2px solid #333;
+        border-bottom: 0.125rem solid #333;
     }
 
     ////////////////////////////   <section id="offer"> //////////////////////////////
@@ -405,7 +402,7 @@ h2.info {
 
     .offer-image {
         width: 100%;
-        padding: 20px 10px;
+        padding: 1.25rem 0.6rem;
     }
 
     .course-type {
@@ -424,7 +421,7 @@ h2.info {
 
     #offer .article-text {
         width: 100%;
-        padding: 5px 10px;
+        padding: 0.3rem 0.6rem;
         text-align: center;
         font-size: 1.2rem;
 
@@ -433,7 +430,7 @@ h2.info {
 
 @media(min-width: 768px) and (max-width:990px) {
     .brand-name {
-        font-size: 4.5em;
+        font-size: 2.7rem;
         top: 60vh;
     }
 
@@ -456,15 +453,11 @@ h2.info {
 @media(min-height: 320px) {
     .header-container nav ul li a {
         font-size: 1rem;
-        padding: 4px;
+        padding: 0.25rem;
     }
 }
 
 @media(min-height: 414px) and (orientation:landscape) {
-    .header-container nav ul li a {
-        font-size: 1.7em;
-        padding: 6px;
-    }
 
     h2.info {
         font-size: 1.2rem;
@@ -474,21 +467,15 @@ h2.info {
 @media(min-height: 568px) {
     .header-container nav ul li a {
         font-size: 1.3rem;
-        padding: 10px;
+        padding: 0.6rem;
     }
 }
 
-@media(min-height: 740px) {
-    .header-container nav ul li a {
-        font-size: 1.5rem;
-        padding: 10px;
-    }
-}
 
 @media(min-height: 1280px) {
     .header-container nav ul li a {
         font-size: 2rem;
-        padding: 16px;
+        padding: 1rem;
     }
 
     .brand-name {
@@ -509,7 +496,7 @@ h2.info {
 
 @media(min-width:991px) {
     .header-container {
-        padding: 0 30px 0 10px;
+        padding: 0 1.875rem 0 0.6rem;
         box-shadow: 0 0 0 0 #333;
         display: flex;
         justify-content: right;
@@ -517,7 +504,7 @@ h2.info {
 
     .header-container nav {
         display: block;
-        padding-left: 150px;
+        padding-left: 9.375rem;
     }
 
     .header-container nav ul {
@@ -527,10 +514,10 @@ h2.info {
 
     .header-container nav ul li a {
         display: block;
-        height: 60px;
-        line-height: 60px;
-        font-size: 1.5em;
-        padding: 0 20px;
+        height: 3.75rem;
+        line-height: 3.75rem;
+        font-size: 0.9rem;
+        padding: 0 1.25rem;
     }
 
     .menu-toggle {
@@ -542,20 +529,20 @@ h2.info {
     h2.info {
         position: absolute;
         width: 100%;
-        padding: 0 10px;
+        padding: 0 0.6rem;
     }
 
     .brand-name {
         text-align: center;
-        font-size: 5em;
+        font-size: 3rem;
         top: 55vh;
-        letter-spacing: 1px;
+        letter-spacing: 0.06rem;
     }
 
     h2.info {
         font-size: 2rem;
         text-align: left;
-        padding: 0 0 0 20px;
+        padding: 0 0 0 1.25rem;
         top: 80vh;
     }
 
@@ -565,9 +552,9 @@ h2.info {
         top: 95vh;
         left: 0;
         width: 100%;
-        padding: 5px;
+        padding: 0.3rem;
         text-align: center;
-        font-size: .8rem;
+        font-size: 0.8rem;
         background-color: rgba(255, 255, 255, 0.5);
         color: black;
     }
@@ -582,22 +569,22 @@ h2.info {
     }
 
     .card {
-        max-width: 280px;
-        height: 220px;
+        max-width: 17.5rem;
+        height: 13.75rem;
     }
 
     .card:hover {
-        height: 400px;
+        height: 25rem;
     }
 
     .container-solo .card .content h2,
     .container-pairs .card .content h2 {
-        font-size: 18px;
+        font-size: 1.125rem;
     }
 
     .container-solo .card .content p,
     .container-pairs .card .content p {
-        font-size: 14px;
+        font-size: 0.88rem;
     }
 
     ////////////////////////////   <section id="offer"> //////////////////////////////
@@ -613,9 +600,9 @@ h2.info {
 }
 
 #current-affairs {
-    padding: 30px 10px 30px;
+    padding: 1.88rem 0.6rem 1.88rem;
     min-height: 20vh;
-    max-width: 1240px;
+    max-width: 77.5rem;
 }
 
 .article1 {
@@ -625,7 +612,7 @@ h2.info {
 .description {
     width: 100%;
     text-align: center;
-    padding: 10px 20px;
+    padding: 0.6rem 1.25rem;
     font-weight: bold;
     font-size: 2rem;
     color: #333;
@@ -635,7 +622,7 @@ h2.info {
 #dance-courses {
     background-color: #604B56;
     min-height: 60vh;
-    max-width: 1400px;
+    max-width: 87.5rem;
 }
 
 .container-solo,
@@ -644,23 +631,23 @@ h2.info {
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    padding: 40px 30px;
+    padding: 2.5rem 1.88rem;
 }
 
 
 .card {
     background-color: #fff;
-    margin: 30px 10px;
+    margin: 1.88rem 0.6rem;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 5px 202px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0.3rem 12.6rem rgba(0, 0, 0, 0.5);
     transition: .3s ease-in-out;
 }
 
 .container-solo .card .content,
 .container-pairs .card .content {
     position: relative;
-    padding: 10px 15px;
+    padding: 0.6rem 0.9rem;
     text-align: center;
     color: #111;
     visibility: hidden;
@@ -677,9 +664,9 @@ h2.info {
 
 .course-type,
 .course-day {
-    padding: 5px 20px;
-    margin: 20px 0;
-    font-size: 20px;
+    padding: 0.3rem 1.25rem;
+    margin: 1.25rem 0;
+    font-size: 1.25rem;
     background-color: rgba(255, 255, 255, 0.5);
     text-transform: uppercase;
 }
@@ -687,14 +674,14 @@ h2.info {
 #timetable {
     background-color: #fff;
     min-height: 60vh;
-    padding: 50px 0 25px 0;
+    padding: 3.1rem 0 1.55rem 0;
 }
 
 .timetable-class {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 15px 10px;
+    padding: 0.9rem 0.6rem;
 }
 
 
@@ -709,13 +696,13 @@ h2.info {
     width: 46%;
     font-size: 1.1rem;
     font-weight: normal;
-    padding: 0 10px;
+    padding: 0 0.6rem;
 }
 
 
 .description-courses span {
     font-size: 1rem;
-    letter-spacing: -0.5px;
+    letter-spacing: -0.03rem;
 }
 
 #solo {
@@ -731,8 +718,8 @@ h2.info {
 #offer {
     background-color: #fff;
     min-height: 60vh;
-    max-width: 1240px;
-    padding: 25px 0;
+    max-width: 77.5rem;
+    padding: 1.5rem 0;
     margin: 0 auto;
 }
 
@@ -740,7 +727,7 @@ h2.info {
     display: block;
     text-align: center;
     font-size: 1rem;
-    padding: 5px 8px;
+    padding: 0.3rem 0.5rem;
     font-weight: 600;
 }
 
@@ -748,7 +735,7 @@ h2.info {
     display: block;
     margin: 0 auto;
     width: 70%;
-    padding: 10px;
+    padding: 0.6rem;
 }
 
 ////////////////////////////   <section id="contact"> //////////////////////////////
@@ -757,31 +744,31 @@ h2.info {
     font-size: 0.7rem;
     text-align: center;
     line-height: 2;
-    padding: 0 10px;
+    padding: 0 0.6rem;
 }
 
 #contact {
     min-height: 250vh;
     margin: 0 auto;
-    padding: 0 10px;
+    padding: 0 0.6rem;
 }
 
 .fa-phone-alt,
 .fa-envelope,
 .fa-map-marker-alt {
     display: block;
-    font-size: 34px;
-    padding: 20px 0 10px;
+    font-size: 2.1rem;
+    padding: 1.25rem 0 0.6rem;
     color: #333;
 }
 
 .contact-logo {
     text-align: center;
-    padding: 10px 0;
+    padding: 0.6rem 0;
 }
 
 .position-center {
-    padding: 0 10px;
+    padding: 0 0.6rem;
     line-height: 1.8;
     font-size: 0.7rem;
 }
@@ -789,36 +776,36 @@ h2.info {
 #contact .form-title {
     font-size: 1.3rem;
     text-align: center;
-    padding: 15px 10px;
+    padding: 0.9rem 0.6rem;
 }
 
 #contact form {
-    padding: 10px 20px;
+    padding: 0.6rem 1.25rem;
 }
 
 #contact input,
 #contact button,
 #contact textarea {
-    margin-bottom: 15px;
+    margin-bottom: 0.9rem;
     font-family: "Open Sans", sans-serif;
     width: 100%;
-    font-size: 14px;
-    padding: 5px;
-    border-top: 0.2px solid #604B56;
-    border: 1px solid #ced4da;
+    font-size: 0.88rem;
+    padding: 0.3rem;
+    border-top: 0.125rem solid #604B56;
+    border: 0.06rem solid #ced4da;
 }
 
 #contact textarea {
-    height: 180px;
+    height: 11rem;
 }
 
 #contact input {
-    height: 26px;
+    height: 1.6rem;
 }
 
 #contact button {
-    font-size: 14px;
-    line-height: 40px;
+    font-size: 0.88rem;
+    line-height: 2.5rem;
     cursor: pointer;
     background-color: #fff;
 }
@@ -832,10 +819,10 @@ div.home,
 
 @media(min-width:1100px) {
     .header-container nav ul li a {
-        font-size: 1.8em;
+        font-size: 1rem;
     }
 
     .brand-name {
-        font-size: 6em;
+        font-size: 3.6rem;
     }
 }
