@@ -190,6 +190,150 @@ h2.info {
   display: none;
 }
 
+.article-image {
+  width: 40%;
+  height: 40%;
+  padding: 0.6rem 0.3rem;
+}
+
+.article-text {
+  width: 60%;
+  padding: 0.6rem 0.3rem;
+  font-size: 0.7rem;
+  color: #333;
+}
+
+#current-affairs {
+  padding: 1.88rem 0.6rem 1.88rem;
+  min-height: 20vh;
+  max-width: 87.5rem;
+}
+
+.article1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.description {
+  width: 100%;
+  text-align: center;
+  padding: 0.6rem 0.25rem;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #333;
+  background-color: #fff;
+}
+
+#dance-courses {
+  background-color: #604B56;
+  min-height: 60vh;
+  max-width: 87.5rem;
+}
+
+.container-solo,
+.container-pairs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 1.5rem 1.88rem;
+}
+
+.course-type,
+.course-day {
+  padding: 0.3rem 1.25rem;
+  margin: 1.25rem 0;
+  font-size: 1.25rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  text-transform: uppercase;
+}
+
+.container-solo .card,
+.container-pairs .card {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 6.5rem;
+  max-width: 9rem;
+  margin: 1.3rem 0;
+}
+
+.container-solo .card:hover,
+.container-pairs .card:hover {
+  height: 18.5rem;
+}
+
+.card {
+  background-color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 0.3rem 12.6rem rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0.3rem 12.6rem rgba(0, 0, 0, 0.5);
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  margin: 1.88rem 0.6rem;
+}
+
+.card .imgBox {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 1;
+  -webkit-box-shadow: 0 0.3rem 1.25rem rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0.3rem 1.25rem rgba(0, 0, 0, 0.2);
+  width: 7rem;
+  height: 7rem;
+  top: -1.5rem;
+}
+
+.card .imgBox img {
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+.container-solo .card .content,
+.container-pairs .card .content {
+  position: relative;
+  padding: 0.3rem 0.9rem;
+  text-align: center;
+  color: #111;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+}
+
+.container-solo .card:hover .content,
+.container-pairs .card:hover .content {
+  visibility: visible;
+  opacity: 1;
+  -webkit-transition-delay: .3s;
+          transition-delay: .3s;
+  margin-top: -1rem;
+}
+
+.container-solo .card .content p,
+.container-pairs .card .content p {
+  margin: 0.5rem 0;
+}
+
 @media (min-width: 240px) and (max-width: 990px) {
   .header-container nav {
     -webkit-transition: 1s;
@@ -211,23 +355,11 @@ h2.info {
     max-width: 11.25rem;
     margin: 1.25rem 0;
   }
-  .container-solo .card:hover,
-  .container-pairs .card:hover {
-    height: 18.438rem;
-  }
-  .container-solo .card:hover .content,
-  .container-pairs .card:hover .content {
-    margin-top: -1.25rem;
-  }
   .card .imgBox {
     width: 9.375rem;
     height: 9.375rem;
     position: relative;
     top: -1.375rem;
-    left: 0.937rem;
-    z-index: 1;
-    -webkit-box-shadow: 0 0.3rem 1.25rem rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0.3rem 1.25rem rgba(0, 0, 0, 0.2);
   }
   .card .imgBox img {
     width: 100%;
@@ -240,20 +372,6 @@ h2.info {
   }
   #offer .course-type {
     background-color: #604B56;
-  }
-}
-
-@media (min-width: 240px) and (max-width: 415px) {
-  .article-image {
-    width: 40%;
-    height: 40%;
-    padding: 0.6rem 0.3rem;
-  }
-  .article-text {
-    width: 60%;
-    padding: 0.6rem 0.3rem;
-    font-size: 0.7rem;
-    color: #333;
   }
 }
 
@@ -290,7 +408,7 @@ h2.info {
 
 @media (min-width: 414px) and (max-width: 990px) {
   .article-text {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -303,14 +421,14 @@ h2.info {
     font-size: 1.2rem;
   }
   .article-image {
-    width: 30%;
-    height: 30%;
+    width: 35%;
+    height: 35%;
     padding: 0.6rem;
   }
   .article-text {
     width: 70%;
     padding: 0.6rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     color: #333;
   }
   .card {
@@ -322,29 +440,32 @@ h2.info {
   }
   .card .imgBox {
     position: relative;
-    width: 13.75rem;
-    height: 13.75rem;
-    top: -2.188rem;
-    left: 1.875rem;
-    z-index: 1;
-    -webkit-box-shadow: 0 0.3rem 1.25rem rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0.3rem 1.25rem rgba(0, 0, 0, 0.2);
+    width: 10rem;
+    height: 10rem;
   }
   .card .imgBox img {
     max-width: 100%;
-    border-radius: 0.25rem;
   }
-  .container-solo .card .content,
-  .container-pairs .card .content {
-    margin-top: -8.75rem;
+  .container-solo .card,
+  .container-pairs .card {
+    height: 10rem;
+    max-width: 13rem;
+  }
+  .container-solo .card:hover,
+  .container-pairs .card:hover {
+    height: 22rem;
   }
   .container-solo .card:hover .content,
   .container-pairs .card:hover .content {
-    margin-top: -1.875rem;
+    margin-top: -0.5rem;
   }
   .container-solo .card .content p,
   .container-pairs .card .content p {
     font-size: 0.75rem;
+  }
+  .container-solo .card .content h2,
+  .container-pairs .card .content h2 {
+    font-size: 1rem;
   }
   .timetable-class {
     display: -webkit-box;
@@ -387,7 +508,7 @@ h2.info {
     width: 100%;
     padding: 1.25rem 0.6rem;
   }
-  .course-type {
+  #offer .course-type {
     display: none;
   }
   .image-text {
@@ -530,16 +651,31 @@ h2.info {
   .article-text {
     width: 80%;
   }
-  .card {
-    max-width: 17.5rem;
-    height: 13.75rem;
+  .container-solo .card,
+  .container-pairs .card {
+    max-width: 18rem;
+    height: 13rem;
   }
-  .card:hover {
+  .container-solo .card:hover,
+  .container-pairs .card:hover {
     height: 25rem;
+  }
+  .card .imgBox {
+    width: 13rem;
+    height: 13rem;
+    top: -2.9rem;
+  }
+  .card .imgBox img {
+    width: 100%;
+    border-radius: 0.25rem;
+  }
+  .container-solo .card:hover .content,
+  .container-pairs .card:hover .content {
+    margin-top: -1.4rem;
   }
   .container-solo .card .content h2,
   .container-pairs .card .content h2 {
-    font-size: 1.125rem;
+    font-size: 1.2rem;
   }
   .container-solo .card .content p,
   .container-pairs .card .content p {
@@ -551,95 +687,6 @@ h2.info {
   .offer-image {
     max-width: 100%;
   }
-}
-
-#current-affairs {
-  padding: 1.88rem 0.6rem 1.88rem;
-  min-height: 20vh;
-  max-width: 77.5rem;
-}
-
-.article1 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.description {
-  width: 100%;
-  text-align: center;
-  padding: 0.6rem 1.25rem;
-  font-weight: bold;
-  font-size: 2rem;
-  color: #333;
-  background-color: #fff;
-}
-
-#dance-courses {
-  background-color: #604B56;
-  min-height: 60vh;
-  max-width: 87.5rem;
-}
-
-.container-solo,
-.container-pairs {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  padding: 2.5rem 1.88rem;
-}
-
-.card {
-  background-color: #fff;
-  margin: 1.88rem 0.6rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-shadow: 0 0.3rem 12.6rem rgba(0, 0, 0, 0.5);
-          box-shadow: 0 0.3rem 12.6rem rgba(0, 0, 0, 0.5);
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
-
-.container-solo .card .content,
-.container-pairs .card .content {
-  position: relative;
-  padding: 0.6rem 0.9rem;
-  text-align: center;
-  color: #111;
-  visibility: hidden;
-  opacity: 0;
-  -webkit-transition: .3s ease-in-out;
-  transition: .3s ease-in-out;
-}
-
-.container-solo .card:hover .content,
-.container-pairs .card:hover .content {
-  visibility: visible;
-  opacity: 1;
-  -webkit-transition-delay: .3s;
-          transition-delay: .3s;
-}
-
-.course-type,
-.course-day {
-  padding: 0.3rem 1.25rem;
-  margin: 1.25rem 0;
-  font-size: 1.25rem;
-  background-color: rgba(255, 255, 255, 0.5);
-  text-transform: uppercase;
 }
 
 #timetable {
@@ -706,7 +753,7 @@ h2.info {
 .offer-image {
   display: block;
   margin: 0 auto;
-  width: 70%;
+  width: 80%;
   padding: 0.6rem;
 }
 
